@@ -7,17 +7,47 @@ type Project = {
 
 const projects: Project = [
     {
-        title: 'sth',
-        imgUrl: 'src',
+        title: 'Haiku-itter',
+        imgUrl: '../public/assets/haiku-itter.png',
+        stack: ['NextJS', 'Tailwind', 'Typescript', 'NeoDB'],
+        link: 'https://haiku-itter.vercel.app/',
+    },
+    {
+        title: 'PinMyHike',
+        imgUrl: '../public/assets/PinMyHike.png',
         stack: ['HTML', 'CSS', 'JavaScript'],
         link: 'https:',
     },
     {
-        title: 'sth',
-        imgUrl: 'src',
+        title: 'Photogapher Portfolio',
+        imgUrl: '../public/assets/photographer.png',
         stack: ['HTML', 'CSS', 'JavaScript'],
-        link: 'https:',
-    }
+        link: 'https://photomanifiesto.netlify.app/',
+    },
+    {
+        title: 'BeatMaker',
+        imgUrl: '../public/assets/beatmaker.png',
+        stack: ['HTML', 'CSS', 'JavaScript'],
+        link: 'https://sad-khorana-46b20f.netlify.app/',
+    } ,
+    {
+        title: 'Coloors',
+        imgUrl: '../public/assets/beatmaker.png',
+        stack: ['HTML', 'CSS', 'JavaScript'],
+        link: 'https://eager-liskov-372011.netlify.app/',
+    },
+    {
+        title: 'MakersBnB',
+        imgUrl: '../public/assets/beatmaker.png',
+        stack: ['HTML', 'CSS', 'Ruby'],
+        link: 'https://github.com/frank-mck/MakerBnB',
+    },
+    {
+        title: 'AceBook',
+        imgUrl: '../public/assets/beatmaker.png',
+        stack: ['HTML', 'SCSS', 'JavaScript','Ruby', 'Rails'],
+        link: 'https://github.com/frodri13/acebook-rails-soda/',
+    },
 ]
 
 export default projects
