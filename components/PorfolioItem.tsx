@@ -18,9 +18,11 @@ export default function PortfolioItem({ key, title, imgUrl, stack, link }: Portf
        >
 
         <Image 
-            src={imgUrl}
+            src={`/${imgUrl}`}
             alt="portfolio" 
             className="w-full h-36 md:h-48 object-cover cursor-pointer"
+            width={500}
+            height={500}
         />
          <div className="w-full p-4">
              <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold ">{title}</h3>

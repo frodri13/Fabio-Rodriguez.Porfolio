@@ -16,7 +16,7 @@ const projects: Project = [
         title: 'PinMyHike',
         imgUrl: '../public/assets/PinMyHike.png',
         stack: ['HTML', 'CSS', 'JavaScript'],
-        link: 'https:',
+        link: 'https://github.com/frank-mck/pin-my-hike',
     },
     {
         title: 'Photogapher Portfolio',
@@ -32,19 +32,19 @@ const projects: Project = [
     } ,
     {
         title: 'Coloors',
-        imgUrl: '../public/assets/beatmaker.png',
+        imgUrl: '../public/assets/coloors.png',
         stack: ['HTML', 'CSS', 'JavaScript'],
         link: 'https://eager-liskov-372011.netlify.app/',
     },
     {
         title: 'MakersBnB',
-        imgUrl: '../public/assets/beatmaker.png',
+        imgUrl: '../public/assets/MakersBnB.png',
         stack: ['HTML', 'CSS', 'Ruby'],
         link: 'https://github.com/frank-mck/MakerBnB',
     },
     {
         title: 'AceBook',
-        imgUrl: '../public/assets/beatmaker.png',
+        imgUrl: '../public/assets/Acebook.png',
         stack: ['HTML', 'SCSS', 'JavaScript','Ruby', 'Rails'],
         link: 'https://github.com/frodri13/acebook-rails-soda/',
     },
