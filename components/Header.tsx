@@ -6,7 +6,6 @@ export default function Header() {
     return(
         <header>
             <div className="flex flex-row items-center">
-      hola
             </div>
             <DarkModeToggle />
         </header>
