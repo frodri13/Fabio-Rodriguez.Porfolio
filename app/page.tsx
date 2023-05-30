@@ -6,7 +6,7 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <main >
-      <div className="">
+      <div >
         <section id="hero" className="snap-center">
           <Hero />
         </section>

@@ -18,7 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark:bg-[rgb(36,36,36)] dark:text-white`}>
+      <body className={`${inter.className} dark:bg-[rgb(36,36,36)] dark:text-white 
+      scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-violet-300 dark:scrollbar-thumb-orange-300`}>
         <Header />
         {children}
         <Footer />
