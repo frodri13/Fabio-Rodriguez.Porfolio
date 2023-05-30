@@ -9,7 +9,7 @@ const projects: Project = [
     {
         title: 'Haiku-itter',
         imgUrl: '../public/assets/haiku-itter.png',
-        stack: ['NextJS', 'React','Tailwind', 'Typescript', 'NeoDB', 'Prisma'],
+        stack: ['NextJS', 'React','Tailwind', 'Typescript', 'Prisma'],
         link: 'https://haiku-itter.vercel.app/',
     },
     {

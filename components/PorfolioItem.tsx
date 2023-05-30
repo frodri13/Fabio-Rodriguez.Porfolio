@@ -25,8 +25,10 @@ export default function PortfolioItem({ key, title, imgUrl, stack, link }: Portf
             width={500}
             height={500}
         />
-         <div className="w-full p-4">
+         <div className="w-full p-4 relative">
              <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold ">{title}</h3>
+             <div className="flex justify-between gap-2">
+
              <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white ">
                 {stack.map(item => (
                    <span key={key}  className="group-hover:border-violet-500 dark:group-hover:border-orange-500 inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md">
@@ -34,6 +36,18 @@ export default function PortfolioItem({ key, title, imgUrl, stack, link }: Portf
                    </span>
                 ))}
              </p>
+
+            <Image 
+               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+               alt="Github Icon"
+               width={40}
+               height={40}
+               className=" "
+            />
+
+             </div>
+            
+          
           </div>
        </a>
     )

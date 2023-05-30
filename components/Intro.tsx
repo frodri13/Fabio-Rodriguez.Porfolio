@@ -1,5 +1,4 @@
 'use client'
-
 import Image from "next/image"
 import fabio from "../public/assets/fabio.jpeg"
 import {motion} from "framer-motion"
