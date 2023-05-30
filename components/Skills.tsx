@@ -15,17 +15,14 @@ export default function Skills() {
             <h3 className="top-24 uppercase tracking-[20px] text-2xl absolute">Skills</h3>
 
             <div className='grid grid-cols-4 gap-5'>
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-            </div>
+                {skills?.slice(0, skills.length / 2).map((skill) =>{
+                    <Skill key={skills.indexOf(skill)} skill={skill} />
+                })}
+
+                {skills?.slice(skills.length /2, skills.length).map((skill) =>{
+                    <Skill key={skills.indexOf(skill)} skill={skill} directionLeft/>
+                })}
+              </div>
         
         </motion.div>
     )
