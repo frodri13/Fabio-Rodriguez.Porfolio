@@ -1,5 +1,5 @@
 'use client'
-
+import skills from "@/data/skills"
 import {motion} from 'framer-motion'
 import Skill from './Skill'
 
@@ -16,11 +16,11 @@ export default function Skills() {
 
             <div className='grid grid-cols-4 gap-5'>
                 {skills?.slice(0, skills.length / 2).map((skill) =>{
-                    <Skill key={skills.indexOf(skill)} skill={skill} />
+                   return(<Skill key={skills.indexOf(skill)} skill={skill} />) 
                 })}
 
                 {skills?.slice(skills.length /2, skills.length).map((skill) =>{
-                    <Skill key={skills.indexOf(skill)} skill={skill} directionLeft/>
+                    return(<Skill key={skills.indexOf(skill)} skill={skill} directionLeft/>)
                 })}
               </div>
         

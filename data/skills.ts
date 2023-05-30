@@ -114,3 +114,5 @@ const skills: Skills = [
         percentage: 80
     }, 
 ]
+
+export default skills;

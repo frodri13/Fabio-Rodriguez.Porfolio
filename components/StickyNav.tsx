@@ -9,11 +9,12 @@ export default function StickyNav(){
                 <Image 
                     className="h-10 w-10 rounded-full filter grayscale
                     hover:grayscale-0"
-                    src="#" 
-                    alt="Img that brings us back to the top" />
-
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" 
+                    alt="Img that brings us back to the top" 
+                    width={50}
+                    height={50}
+                    />
             </div>
-
         </footer>
     </Link>
      
