@@ -12,7 +12,7 @@ type PortfolioItemProps = {
 
 export default function PortfolioItem({ key, title, imgUrl, stack, link, github }: PortfolioItemProps) {
     return (
-       <Link 
+       <a 
           href={link}
           target="_blank"
           rel="noopener noreferrer"
@@ -40,17 +40,18 @@ export default function PortfolioItem({ key, title, imgUrl, stack, link, github 
              </p>
          <div>
          <Link className="cursor-zoom-in" href={github} target="_blank" passHref>
-            <Image 
+                      <Image 
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                   alt="Github Icon"
                   width={40}
                   height={40}
+                  className="rounded-full bg-white hover:bg-violet-500 dark:hover:bg-orange-500"
                 />
            </Link>
        </div>
          
              </div>
           </div>
-       </Link>
+       </a>
     )
  }
