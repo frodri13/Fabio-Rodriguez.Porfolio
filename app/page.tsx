@@ -20,8 +20,8 @@ export default function Home() {
         <section id="projects">
           <Portfolio />
         </section>
-        <StickyNav />
-      </div>
+           <StickyNav />
+       </div>
     </main>
   )
 }
