@@ -5,14 +5,24 @@ import Skill from './Skill'
 
 export default function Skills() {
     return(
-        <motion.div 
+        <div>
+                   <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}>
+                 <h3 className="top-24 uppercase tracking-[20px] text-2xl text-center p-20">Skills</h3>
+            </motion.div>
+           
+            
+                    <motion.div 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
             
-            className="h-screen flex relative flex-col text-center md:text-left xl:flex-row
+            className="h-screen flex flex-col text-center md:text-left xl:flex-row
                 max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 items-center">
-            <h3 className="top-24 uppercase tracking-[20px] text-2xl absolute">Skills</h3>
+
+            
 
             <div className='grid grid-cols-4 gap-5'>
                 {skills?.slice(0, skills.length / 2).map((skill) =>{
@@ -25,5 +35,7 @@ export default function Skills() {
               </div>
         
         </motion.div>
+        </div>
+
     )
 }
