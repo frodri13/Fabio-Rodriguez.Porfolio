@@ -13,6 +13,7 @@ export default function Intro(){
             
             className="flex flex-col relative h-screen text-center md:text-left md:flex-row px-10 justify-evenly
                  mx-auto items-center max-w-7xl">
+                    
                 <h3 className="absolute top-24 uppercase tracking-[20px] text-2xl">About</h3>
            
                 <motion.div
