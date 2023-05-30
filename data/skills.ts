@@ -44,11 +44,6 @@ const skills: Skills = [
         percentage: 90 
     }, 
     {
-        title: "Django",
-        url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg",
-        percentage: 75
-    }, 
-    {
         title: "HTML5",
         url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg",
         percentage: 90
@@ -92,11 +87,6 @@ const skills: Skills = [
         title: "Docker",
         url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" ,
         percentage: 75
-    }, 
-     {
-        title: "Vim",
-        url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
-        percentage: 90
     }, 
     {
         title: "Firebase",
