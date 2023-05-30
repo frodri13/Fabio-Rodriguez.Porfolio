@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import Portfolio from "@/components/Portfolio";
 import Skills from "@/components/Skills";
+import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
         </section>
         <section id="about">
           <Intro />
+        </section>
+        <section id="work">
+          <WorkExperience />
         </section>
         <section id="skills">
           <Skills />
