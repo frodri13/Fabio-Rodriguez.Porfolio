@@ -39,9 +39,6 @@ export default function Hero() {
                 <Link href="#about">
                     <button className="heroButton">About</button>
                 </Link>
-                <Link href="#work">
-                    <button className="heroButton">Work</button>
-                </Link>
                 <Link href="#skills">
                     <button className="heroButton">Skills</button>
                 </Link>
