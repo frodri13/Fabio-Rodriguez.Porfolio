@@ -48,6 +48,12 @@ const projects: Project = [
         stack: ['HTML', 'SCSS', 'JavaScript','Ruby', 'Rails'],
         link: 'https://github.com/frodri13/acebook-rails-soda/',
     },
+    {
+        title: "Previous Porfolio",
+        imgUrl: "../public/assets/old-porfolio.png",
+        stack: ["HTML", "CSS", "JavaScript"],
+        link: "https://fabio-rodriguez.netlify.app/",
+    }
 ]
 
 export default projects
