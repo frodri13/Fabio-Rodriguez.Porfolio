@@ -27,7 +27,7 @@ export default function Hero() {
                 height={300}
             />
             <div className="z-10">
-                <h2 className="text-sm uppercase opacity-50 dark:opacity-80
+                <h2 className="text-sm uppercase opacity-70 dark:opacity-80
                 pb-2 tracking-[15px]">Software Engineer</h2>
                 <h1 className="text-5xl lg:text-6xl font-semibold 
                 scroll-px-10">
