@@ -6,9 +6,10 @@ type PortfolioItemProps = {
     imgUrl: string,
     stack: string[],
     link: string,
+    github: string,
 }
 
-export default function PortfolioItem({ key, title, imgUrl, stack, link }: PortfolioItemProps) {
+export default function PortfolioItem({ key, title, imgUrl, stack, link, github }: PortfolioItemProps) {
     return (
        <a 
           href={link}
@@ -36,18 +37,16 @@ export default function PortfolioItem({ key, title, imgUrl, stack, link }: Portf
                    </span>
                 ))}
              </p>
-
-            <Image 
-               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-               alt="Github Icon"
-               width={40}
-               height={40}
-               className=" "
-            />
-
-             </div>
             
-          
+            <a className="cursor-zoom-in" href={github} target="_blank">
+               <Image 
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="Github Icon"
+                  width={40}
+                  height={40}
+                />
+            </a>
+             </div>
           </div>
        </a>
     )

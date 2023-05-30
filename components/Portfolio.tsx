@@ -22,6 +22,7 @@ export default function Portfolio() {
                         stack={project.stack}
                         imgUrl={project.imgUrl}
                         link={project.link}
+                        github={project.github}
                     />
                     )
                                })}
