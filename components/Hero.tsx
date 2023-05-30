@@ -3,6 +3,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter"
 import BackgroundCircles from "./BackgroundCircles"
 import Image from "next/image"
 import fabio from "../public/assets/fabio.jpeg"
+import Link from "next/link"
 
 export default function Hero() {
     const [text, count] = useTypewriter({
@@ -25,7 +26,7 @@ export default function Hero() {
                 width={300}
                 height={300}
             />
-            <div>
+            <div className="z-10">
                 <h2 className="text-sm uppercase text-gray-500
                 pb-2 tracking-[15px]">Software Engineer</h2>
                 <h1 className="text-5xl lg:text-6xl font-semibold 
@@ -34,10 +35,16 @@ export default function Hero() {
                     <Cursor cursorColor="violet" />
                 </h1>
             </div>
-            <div>
-                <button className="heroButton">About</button>
-                <button className="heroButton">Skills</button>
-                <button className="heroButton">Projects</button>
+            <div className="p-5 z-10">
+                <Link href="#about">
+                    <button className="heroButton">About</button>
+                </Link>
+                <Link href="#skills">
+                    <button className="heroButton">Skills</button>
+                </Link>
+                <Link href="#projects">
+                    <button className="heroButton">Projects</button>
+                </Link>
             </div>
         </div>
     )

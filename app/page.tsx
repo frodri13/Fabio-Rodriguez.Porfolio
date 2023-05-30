@@ -6,15 +6,20 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <main >
-      <div className="snap-y snap-mandatory z-0">
+      <div className="">
         <section id="hero" className="snap-center">
           <Hero />
         </section>
         <section id="about">
           <Intro />
         </section>
-        <Skills />
-        <Portfolio />
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="projects">
+          <Portfolio />
+        </section>
+        
       </div>
     </main>
   )
