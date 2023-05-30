@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 type PortfolioItemProps = {
     key: number,
@@ -11,7 +12,7 @@ type PortfolioItemProps = {
 
 export default function PortfolioItem({ key, title, imgUrl, stack, link, github }: PortfolioItemProps) {
     return (
-       <a 
+       <Link 
           href={link}
           target="_blank"
           rel="noopener noreferrer"
@@ -37,17 +38,19 @@ export default function PortfolioItem({ key, title, imgUrl, stack, link, github 
                    </span>
                 ))}
              </p>
-            
-            <a className="cursor-zoom-in" href={github} target="_blank">
-               <Image 
+         <div>
+         <Link className="cursor-zoom-in" href={github} target="_blank" passHref>
+            <Image 
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                   alt="Github Icon"
                   width={40}
                   height={40}
                 />
-            </a>
+           </Link>
+       </div>
+         
              </div>
           </div>
-       </a>
+       </Link>
     )
  }
