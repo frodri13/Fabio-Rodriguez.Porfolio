@@ -20,7 +20,7 @@ export default function Hero() {
         justify-center text-center overflow-hidden">
             <BackgroundCircles />
             <Image
-                className="object-cover relative rounded-full h-32 w-32 mx-auto" 
+                className="object-cover relative rounded-full h-36 w-36 mx-auto" 
                 src={fabio}
                 alt="Profile Picture of Fabio Rodriguez"
                 width={300}
