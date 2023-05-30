@@ -11,7 +11,7 @@ type SkillProps = {
 }
 
 export default function Skill({directionLeft, skill}: SkillProps) {
-    console.log(skill.url)
+    
     return(
         <div className="group relative flex cursor-pointer">
             <motion.img
