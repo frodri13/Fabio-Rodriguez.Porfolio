@@ -6,8 +6,8 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <main >
-      <div>
-        <section id="hero">
+      <div className="snap-y snap-mandatory z-0">
+        <section id="hero" className="snap-center">
           <Hero />
         </section>
         <section id="about">

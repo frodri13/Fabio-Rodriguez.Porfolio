@@ -1,5 +1,6 @@
 'use client'
 import { useTypewriter, Cursor } from "react-simple-typewriter"
+import BackgroundCircles from "./BackgroundCircles"
 
 export default function Hero() {
     const [text, count] = useTypewriter({
@@ -12,7 +13,9 @@ export default function Hero() {
         delaySpeed: 2000
     })
     return(
-        <div>
+        <div className="h-screen flex flex-col space-y-8 items-center 
+        justify-center text-center overflow-hidden">
+            <BackgroundCircles />
             <h1>
                 <span>{text}</span>
                 <Cursor cursorColor="violet" />
