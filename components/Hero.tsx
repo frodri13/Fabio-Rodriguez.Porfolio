@@ -10,7 +10,7 @@ export default function Hero() {
         words: [
             "Hello World! I'm Fabio Rodriguez", 
             "Welcome to my Portfolio!",
-            "I am a Full Stack Web Developer, a Husband and a Father!",
+            "I am a Full Stack Web Developer, a Father and a Husband!",
            ],
         loop: true,
         delaySpeed: 2000
