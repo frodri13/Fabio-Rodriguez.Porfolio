@@ -6,22 +6,26 @@ import {motion} from "framer-motion"
 
 export default function Intro(){
     return(
-        <div className="flex flex-col relative h-screen text-center md:text-left md:flex-row px-10 justify-evenly
-        mx-auto items-center max-w-7xl">
-            <h3 className="absolute top-24 uppercase tracking-[20px] text-2xl">About</h3>
+        <motion.div 
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 1.5}}
+            
+            className="flex flex-col relative h-screen text-center md:text-left md:flex-row px-10 justify-evenly
+                 mx-auto items-center max-w-7xl">
+                <h3 className="absolute top-24 uppercase tracking-[20px] text-2xl">About</h3>
            
-           <motion.div
-            initial={{
-                x:-200,
-                opacity: 0,
-            }}
-            transition={{
-                duration: 1.2,
-            }}
-            whileInView={{opacity: 1, x: 0}}
-            viewport={{once: true}}
+                <motion.div
+                    initial={{
+                    x:-200,
+                    opacity: 0,
+                }}
+                    transition={{
+                    duration: 1.2,
+                }}
+                    whileInView={{opacity: 1, x: 0}}
+                    viewport={{once: true}}
            > 
-           {/* md:rounded-lg md:w-64 md:h-95 xl:h-[600px] xl:w-[500px] */}
                 <Image 
                     src={fabio}
                     alt="Profile picture of Fabio Rodriguez"
@@ -43,6 +47,6 @@ export default function Intro(){
                     problems and finding solutions for our customers.
                 </p>
             </div>
-        </div>
+        </motion.div>
     )
 }
