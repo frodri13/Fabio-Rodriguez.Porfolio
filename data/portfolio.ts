@@ -9,13 +9,13 @@ const projects: Project = [
     {
         title: 'Haiku-itter',
         imgUrl: '../public/assets/haiku-itter.png',
-        stack: ['NextJS', 'Tailwind', 'Typescript', 'NeoDB'],
+        stack: ['NextJS', 'React','Tailwind', 'Typescript', 'NeoDB', 'Prisma'],
         link: 'https://haiku-itter.vercel.app/',
     },
     {
         title: 'PinMyHike',
         imgUrl: '../public/assets/PinMyHike.png',
-        stack: ['HTML', 'CSS', 'JavaScript'],
+        stack: ['React', 'SCSS', 'JavaScript', 'ExpressJS'],
         link: 'https://github.com/frank-mck/pin-my-hike',
     },
     {
