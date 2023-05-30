@@ -34,7 +34,7 @@ export default function Intro(){
          
             <div className="space-y-10 px-0 md:px-10">
                 <h4 className="text-4xl font-semibold">
-                    A few words about me
+                    A <span className="italic dark:text-orange-300 text-violet-300">few words</span> about me
                 </h4>
                 <p className="text-lg">
                     I am a Full Stack Web Developer with experience in React, Nextjs, TypeScript and Tailwind. 
