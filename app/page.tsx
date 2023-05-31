@@ -15,7 +15,7 @@ export default function Home() {
           <Intro />
         </section>
         <section id="skills">
-          {/* <Skills /> */}
+          <Skills />
         </section>
         <section id="projects">
           <Portfolio />
