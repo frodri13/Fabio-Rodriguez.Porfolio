@@ -17,11 +17,18 @@ export default function Skills() {
             <div className="h-screen flex flex-col text-center md:text-left xl:flex-row
                 max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 items-center">
 
-            <div className='grid grid-cols-4 gap-5'>
+        <motion.div
+            initial={{
+                opacity: 0,
+                x: 200
+            }}
+            transition={{duration: 1}}
+            whileInView={{opacity: 1, x: 0 }}
+             className='grid grid-cols-4 gap-5'>
                 {skills?.map((skill) =>{
                     return(<Skill key={skills.indexOf(skill)} skill={skill} directionLeft/>)
                 })}
-              </div>
+              </motion.div>
         </div>
         </div>
 

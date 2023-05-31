@@ -15,15 +15,6 @@ export default function Skill({directionLeft, skill}: SkillProps) {
     
     return(
         <div className="group relative flex cursor-pointer">
-            {/* <motion.div
-                initial={{
-                    x: directionLeft ? -200 : 200,
-                    opacity: 0,
-            }}
-            transition={{duration: 1}}
-            whileInView={{opacity: 1, x: 0 }}> */}
-
-         
             <Image
             width={50}
             height={50}
@@ -39,7 +30,6 @@ export default function Skill({directionLeft, skill}: SkillProps) {
                     <p className='text-3xl font-bold text-violet-500 dark:text-orange-500'>{skill.percentage.toString()}%</p>
                 </div>
             </div>
-            {/* </motion.div> */}
         </div>
     )
 }
