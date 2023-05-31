@@ -1,5 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
+import dynamic from "next/dynamic";
+
 
 type PortfolioItemProps = {
     key: number,
@@ -10,7 +12,7 @@ type PortfolioItemProps = {
     github: string,
 }
 
-export default function PortfolioItem({ key, title, imgUrl, stack, link, github }: PortfolioItemProps) {
+const PortfolioItem = ({ key, title, imgUrl, stack, link, github }: PortfolioItemProps) =>{
     return (
        <Link
           href={link}
@@ -38,20 +40,20 @@ export default function PortfolioItem({ key, title, imgUrl, stack, link, github 
                    </span>
                 ))}
              </p>
-         <div>
+       
          <Link className="cursor-zoom-in" href={github} target="_blank" passHref>
-                      <Image 
+              <Image 
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                   alt="Github Icon"
                   width={40}
                   height={40}
                   className="rounded-full bg-white hover:bg-violet-500 dark:hover:bg-orange-500"
-                />
-           </Link>
-       </div>
-         
+                /> 
+         </Link>      
              </div>
           </div>
        </Link>
     )
  }
+
+ export default dynamic (() => Promise.resolve(PortfolioItem), {ssr: false})
