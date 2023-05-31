@@ -23,11 +23,13 @@ export default function Skills() {
                 x: 200
             }}
             transition={{duration: 1}}
-            whileInView={{opacity: 1, x: 0 }}
-             className='grid grid-cols-4 gap-5'>
+            whileInView={{opacity: 1, x: 0 }}>
+
+             <div className='grid grid-cols-4 gap-5'>
                 {skills?.map((skill) =>{
                     return(<Skill key={skills.indexOf(skill)} skill={skill} directionLeft/>)
                 })}
+                </div>
               </motion.div>
         </div>
         </div>
