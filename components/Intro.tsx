@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
-import fabio from "../public/assets/fabio.jpeg"
 import {motion} from "framer-motion"
+import camel from "../public/assets/camel.jpeg"
 
 export default function Intro(){
     return(
@@ -26,13 +26,14 @@ export default function Intro(){
                     whileInView={{opacity: 1, x: 0}}
                     viewport={{once: true}}
            > 
-                <Image 
-                    src={fabio}
-                    alt="Profile picture of Fabio Rodriguez"
-                    className="mb-20 md:mb-0 flex-shrink-0 h-56 w-56
+           {/* "mb-20 md:mb-0 flex-shrink-0 h-56 w-56
                     rounded-full object-cover 
                     md:rounded-lg md:w-64 md:h-95 xl:h-[600px] xl:w-[500px]
-                    "
+                    " */}
+                <Image 
+                    src={camel}
+                    alt="Profile picture of Fabio Rodriguez"
+                    className="object-none"
                 />
            </motion.div>
          
