@@ -2,7 +2,7 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 import BackgroundCircles from "./BackgroundCircles"
 import Image from "next/image"
-import fabio from "../public/assets/fabio.jpeg"
+import fabio from "@/public/static/images/fabio.jpeg"
 import Link from "next/link"
 
 export default function Hero() {

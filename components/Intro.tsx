@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
 import {motion} from "framer-motion"
-import camel from "../public/assets/camel.jpeg"
+import camel from "@/public/static/images/camel.jpeg"
 
 export default function Intro(){
     return(

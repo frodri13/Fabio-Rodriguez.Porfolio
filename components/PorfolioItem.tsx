@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import dynamic from "next/dynamic";
 
@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 type PortfolioItemProps = {
     key: number,
     title: string,
-    imgUrl: string,
+    imgUrl: StaticImageData,
     stack: string[],
     link: string,
     github: string,
@@ -23,7 +23,7 @@ const PortfolioItem = ({ key, title, imgUrl, stack, link, github }: PortfolioIte
        >
 
         <Image 
-            src={`/${imgUrl}`}
+            src={imgUrl}
             alt="portfolio" 
             className="w-full h-36 md:h-48 object-cover cursor-pointer"
             width={500}

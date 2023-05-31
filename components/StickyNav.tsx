@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import arrow from "../public/assets/arrow.svg";
+import arrow from "@/public/static/images/arrow.svg";
 
 
 export default function StickyNav(){
