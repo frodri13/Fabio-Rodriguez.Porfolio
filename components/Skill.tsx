@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image';
 
 type SkillProps = {
     directionLeft?: boolean;
@@ -14,13 +15,18 @@ export default function Skill({directionLeft, skill}: SkillProps) {
     
     return(
         <div className="group relative flex cursor-pointer">
-            <motion.img
+            <motion.div
                 initial={{
                     x: directionLeft ? -200 : 200,
                     opacity: 0,
             }}
             transition={{duration: 1}}
-            whileInView={{opacity: 1, x: 0 }}
+            whileInView={{opacity: 1, x: 0 }}>
+
+         
+            <Image
+            width={50}
+            height={50}
             src={skill.url}
             alt={`Icon of ${skill.title}`}     
             className='rounded-full border border-gray-500 object-cover
@@ -33,6 +39,7 @@ export default function Skill({directionLeft, skill}: SkillProps) {
                     <p className='text-3xl font-bold text-violet-500 dark:text-orange-500'>{skill.percentage.toString()}%</p>
                 </div>
             </div>
+            </motion.div>
         </div>
     )
 }
