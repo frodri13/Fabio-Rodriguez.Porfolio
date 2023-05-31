@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main >
       <div >
-        <section id="hero" className="snap-center">
+        <section id="hero">
           <Hero />
         </section>
         <section id="about">
