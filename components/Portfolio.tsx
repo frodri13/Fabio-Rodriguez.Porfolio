@@ -8,7 +8,9 @@ export default function Portfolio() {
         <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}>     
+        transition={{ duration: 1.5 }}
+        className="pb-10"
+        >     
             <h3 className="top-24 uppercase tracking-[20px] text-2xl text-center p-20">Projects</h3>
             <div className="flex flex-col md:flex-row items-center justify-center">
             
