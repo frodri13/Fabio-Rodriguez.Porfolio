@@ -12,7 +12,7 @@ type PortfolioItemProps = {
 
 export default function PortfolioItem({ key, title, imgUrl, stack, link, github }: PortfolioItemProps) {
     return (
-       <a 
+       <Link
           href={link}
           target="_blank"
           rel="noopener noreferrer"
@@ -52,6 +52,6 @@ export default function PortfolioItem({ key, title, imgUrl, stack, link, github 
          
              </div>
           </div>
-       </a>
+       </Link>
     )
  }
