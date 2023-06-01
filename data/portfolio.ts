@@ -6,6 +6,7 @@ import coloors from '/public/static/images/coloors.png'
 import bnb from '/public/static/images/MakersBnB.png'
 import aceBook from '/public/static/images/Acebook.png'
 import pPorfolio from '/public/static/images/old-porfolio.png'
+import gol from '/public/static/images/gol.png' 
 
 import { StaticImageData } from 'next/image'
 
@@ -18,6 +19,13 @@ type Project = {
 }[]
 
 const projects: Project = [
+    {
+        title: "Game of Life",
+        imgUrl: gol,
+        stack: ['NextJS', 'React','Tailwind', 'Typescript'],
+        link: "https://game-of-life-fawn.vercel.app/",
+        github: "https://github.com/frodri13/Game-of-Life"
+    },
     {
         title: 'Haiku-itter',
         imgUrl: haiku,
