@@ -7,6 +7,7 @@ export default function Icons(){
             <SocialIcon url='https://github.com/frodri13' fgColor='white' bgColor='gray'/>
             <SocialIcon url='https://frontendmasters.com/u/frodri13/' fgColor='white' bgColor='gray'/>
             <SocialIcon url="https://twitter.com/fabio50298777" fgColor='white' bgColor='gray'/>
+            <SocialIcon url="https://www.instagram.com/fabsrocco/" fgColor='white' bgColor='gray' target='_blank'/>
         </div>
     )
 }
